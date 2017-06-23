@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fun with Bootstrap</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css" type="text/css"/>
+</head>
+<body>
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Chris's playground</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">setting</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+    <br/>
+    <div class="jumbotron">
+      <h1>Hi, welcome to Chris's examples!</h1>
+      <p>Watch this page explode into your imagination... or something!</p>
+      <a href="#" class="btn btn-primary btn-lg" id="silly-btn">Click Me</a>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+          <p>
+            Lorem ipsum dolor sit amet, suas viris laudem an est, quidam percipitur honestatis ea vel, quo timeam indoctum ea. Mea dolorum deterruisset ad. Inermis veritus duo ad, in pri facete meliore reprehendunt. Paulo mediocritatem nam te. Sea no diam ferri. Id veritus voluptatibus mel, paulo sadipscing adversarium ad sit. No pro brute facete deterruisset.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <p>
+            Sale mollis eruditi sed no, ex simul dolorum salutandi usu. Cum in dolores noluisse, ea admodum inimicus nam, ea evertitur forensibus honestatis cum. Eam an virtute insolens, ex vel nonumes veritus, ne nibh prompta recteque vis. Quas legere intellegebat ut vim, iusto dictas adolescens eu vel, in his quis laoreet deserunt. Autem labitur euripidis qui in, id labitur inermis sed. Ea vivendo definitiones duo, sed te debet graeco ullamcorper. Ea cum urbanitas assueverit, no posse patrioque qui.
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+          <p>
+            Unum ancillae assentior cu usu, ad cum novum ludus tibique. Vel erant vivendo ne. Adipiscing dissentiunt eu vel. Eu vidit lobortis usu. Ne mandamus eloquentiam instructior sea, per sale congue aliquid ei.
+          </p>
+        </div>
+        <!-- <div class="clearfix visible-md">
+
+        </div> -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+          <p>
+            Cu duis dicat sed, vim delicata theophrastus no, sed ea putent oporteat expetendis. Qui ad nobis invenire ullamcorper, adhuc legere postea cu qui. Alia modus veritus eu eam, mel amet admodum ea. Usu te magna copiosae appellantur. Per id ipsum vocibus explicari.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <form class="form-inline">
+
+    	<div class="form-group"> <!-- Username field -->
+    		<input class="form-control" id="username_id" name="user_name" type="text" placeholder="Username"/>
+    	</div>
+
+    	<div class="form-group"> <!-- Password field -->
+    		<input class="form-control" id="password_id" name="user_password" type="password" placeholder="Password"/>
+    	</div>
+
+    	<div class="form-group"> <!-- Login button -->
+    		<button class="btn btn-primary " name="submit" type="submit">Login</button>
+    	</div>
+
+    	<div class="form-group"> <!-- Remember Field -->
+    		<div class="checkbox">
+    		</div>
+    	</div>
+      <hr/>
+    </form>
+    <form class="form-horizontal">
+      <hr/>
+
+	<div class="form-group"> <!-- Full Name -->
+		<label for="full_name_id" class="control-label col-sm-2">Full Name</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="John Deer">
+		</div>
+	</div>
+
+	<div class="form-group"> <!-- Email -->
+		<label for="email_id" class="control-label col-sm-2">Email</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="email_id" name="email_name" placeholder="name@domain.com">
+			<p class="help-text">We value your privacy and will never sell your email address.</p>
+		</div>
+	</div>
+	<div class="form-group"> <!-- Frequency Field -->
+		<label class="control-label col-sm-2">Email Me</label>
+		<div class="col-sm-10">
+			<div class="radio">
+				<label class="radio">
+					<input name="email_frequency" type="radio" value="day"/>
+					Daily
+				</label>
+			</div>
+			<div class="radio">
+				<label class="radio">
+					<input name="email_frequency" type="radio" value="week"/>
+					Weekly
+				</label>
+			</div>
+			<div class="radio">
+				<label class="radio">
+					<input name="email_frequency" type="radio" value="month"/>
+					Monthly
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-group"> <!-- Submit Button -->
+		<div class="col-sm-10 col-sm-offset-2">
+			<button type="submit" class="btn btn-primary">Get Updates!</button>
+		</div>
+	</div>
+</form>
+<form>
+<br />
+<hr/>
+
+	<div class="form-group">
+		<label for="full_name_id" class="control-label">Full Name</label>
+		<input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="John Deer">
+	</div>
+
+	<div class="form-group">
+		<label for="street1_id" class="control-label">Street Address 1</label>
+		<input type="text" class="form-control" id="street1_id" name="street1" placeholder="Street address, P.O. box, company name, c/o">
+	</div>
+
+	<div class="form-group">
+		<label for="street2_id" class="control-label">Street Address 2</label>
+		<input type="text" class="form-control" id="street2_id" name="street2" placeholder="Apartment, suite, unit, building, floor, etc.">
+	</div>
+
+	<div class="form-group">
+		<label for="city_id" class="control-label">City</label>
+		<input type="text" class="form-control" id="city_id" name="city" placeholder="Smallville">
+	</div>
+
+	<div class="form-group">
+		<label for="state_id" class="control-label">State</label>
+		<select class="form-control" id="state_id">
+			<option value="AL">Alabama</option>
+			<option value="AK">Alaska</option>
+			<option value="AZ">Arizona</option>
+			<option value="AR">Arkansas</option>
+			<option value="CA">California</option>
+			<option value="CO">Colorado</option>
+			<option value="CT">Connecticut</option>
+			<option value="DE">Delaware</option>
+			<option value="DC">District Of Columbia</option>
+			<option value="FL">Florida</option>
+			<option value="GA">Georgia</option>
+			<option value="HI">Hawaii</option>
+			<option value="ID">Idaho</option>
+			<option value="IL">Illinois</option>
+			<option value="IN">Indiana</option>
+			<option value="IA">Iowa</option>
+			<option value="KS">Kansas</option>
+			<option value="KY">Kentucky</option>
+			<option value="LA">Louisiana</option>
+			<option value="ME">Maine</option>
+			<option value="MD">Maryland</option>
+			<option value="MA">Massachusetts</option>
+			<option value="MI">Michigan</option>
+			<option value="MN">Minnesota</option>
+			<option value="MS">Mississippi</option>
+			<option value="MO">Missouri</option>
+			<option value="MT">Montana</option>
+			<option value="NE">Nebraska</option>
+			<option value="NV">Nevada</option>
+			<option value="NH">New Hampshire</option>
+			<option value="NJ">New Jersey</option>
+			<option value="NM">New Mexico</option>
+			<option value="NY">New York</option>
+			<option value="NC">North Carolina</option>
+			<option value="ND">North Dakota</option>
+			<option value="OH">Ohio</option>
+			<option value="OK">Oklahoma</option>
+			<option value="OR">Oregon</option>
+			<option value="PA">Pennsylvania</option>
+			<option value="RI">Rhode Island</option>
+			<option value="SC">South Carolina</option>
+			<option value="SD">South Dakota</option>
+			<option value="TN">Tennessee</option>
+			<option value="TX">Texas</option>
+			<option value="UT">Utah</option>
+			<option value="VT">Vermont</option>
+			<option value="VA">Virginia</option>
+			<option value="WA">Washington</option>
+			<option value="WV">West Virginia</option>
+			<option value="WI">Wisconsin</option>
+			<option value="WY">Wyoming</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<label for="zip_id" class="control-label">Zip Code</label>
+		<input type="text" class="form-control" id="zip_id" name="zip" placeholder="#####">
+	</div>
+
+	<div class="form-group">
+		<button type="submit" class="btn btn-primary">Buy!</button>
+	</div>
+
+</form>
+<form id="movieForm" method="post">
+    <div class="form-group">
+        <div class="row">
+            <div class="col-xs-8">
+                <label class="control-label">Movie title</label>
+                <input type="text" class="form-control" name="title" />
+            </div>
+
+            <div class="col-xs-4 selectContainer">
+                <label class="control-label">Genre</label>
+                <select class="form-control" name="genre">
+                    <option value="">Choose a genre</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-xs-4">
+                <label class="control-label">Director</label>
+                <input type="text" class="form-control" name="director" />
+            </div>
+
+            <div class="col-xs-4">
+                <label class="control-label">Writer</label>
+                <input type="text" class="form-control" name="writer" />
+            </div>
+
+            <div class="col-xs-4">
+                <label class="control-label">Producer</label>
+                <input type="text" class="form-control" name="producer" />
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-xs-6">
+                <label class="control-label">Website</label>
+                <input type="text" class="form-control" name="website" />
+            </div>
+
+            <div class="col-xs-6">
+                <label class="control-label">Youtube trailer</label>
+                <input type="text" class="form-control" name="trailer" />
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group" id="form-review">
+        <label class="control-label">Review</label>
+        <textarea class="form-control" name="review" rows="8"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Rating</label>
+        <div>
+            <label class="radio-inline">
+                <input type="radio" name="rating" value="terrible" /> Terrible
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="rating" value="watchable" /> Watchable
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="rating" value="best" /> Best ever
+            </label>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-default">Validate</button>
+</form>
+<hr />
+<br/>
+<div class="container">
+	<div class="row">
+    			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="panel price panel-red">
+						<div class="panel-heading  text-center">
+						<h3>PRO PLAN</h3>
+						</div>
+						<div class="panel-body text-center">
+							<p class="lead" style="font-size:40px"><strong>$10 / month</strong></p>
+						</div>
+						<ul class="list-group list-group-flush text-center">
+							<li class="list-group-item"><i class="icon-ok text-danger"></i> Personal use</li>
+							<li class="list-group-item"><i class="icon-ok text-danger"></i> Unlimited projects</li>
+							<li class="list-group-item"><i class="icon-ok text-danger"></i> 27/7 support</li>
+						</ul>
+						<div class="panel-footer">
+							<a class="btn btn-lg btn-block btn-danger" href="#">BUY NOW!</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+					<div class="panel price panel-grey">
+						<div class="panel-heading arrow_box text-center">
+						<h3>FREE PLAN</h3>
+						</div>
+						<div class="panel-body text-center">
+							<p class="lead" style="font-size:40px"><strong>$0 / month</strong></p>
+						</div>
+						<ul class="list-group list-group-flush text-center">
+							<li class="list-group-item"><i class="icon-ok text-success"></i> Personal use</li>
+							<li class="list-group-item"><i class="icon-ok text-success"></i> Unlimited projects</li>
+							<li class="list-group-item"><i class="icon-ok text-success"></i> 27/7 support</li>
+						</ul>
+						<div class="panel-footer">
+							<a class="btn btn-lg btn-block btn-primary" href="#">BUY NOW!</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+					<div class="panel price panel-white">
+						<div class="panel-heading arrow_box text-center">
+						<h3>FREE PLAN</h3>
+						</div>
+						<div class="panel-body text-center">
+							<p class="lead" style="font-size:40px"><strong>$0 / month</strong></p>
+						</div>
+						<ul class="list-group list-group-flush text-center">
+							<li class="list-group-item"><i class="icon-ok text-success"></i> Personal use</li>
+							<li class="list-group-item"><i class="icon-ok text-success"></i> Unlimited projects</li>
+							<li class="list-group-item"><i class="icon-ok text-success"></i> 27/7 support</li>
+						</ul>
+						<div class="panel-footer">
+							<a class="btn btn-lg btn-block btn-default" href="#">BUY NOW!</a>
+						</div>
+					</div>
+					<!-- /PRICE ITEM -->
+
+
+				</div>
+
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+					<!-- PRICE ITEM -->
+					<div class="panel price panel-white">
+						<div class="panel-heading arrow_box text-center">
+						<h3>FREE PLAN</h3>
+						</div>
+						<div class="panel-body text-center">
+							<p class="lead" style="font-size:40px"><strong>$0 / month</strong></p>
+						</div>
+						<ul class="list-group list-group-flush text-center">
+							<li class="list-group-item"><i class="icon-ok text-success"></i> Personal use</li>
+							<li class="list-group-item"><i class="icon-ok text-success"></i> Unlimited projects</li>
+							<li class="list-group-item"><i class="icon-ok text-success"></i> 27/7 support</li>
+						</ul>
+						<div class="panel-footer">
+							<a class="btn btn-lg btn-block btn-default" href="#">BUY NOW!</a>
+						</div>
+					</div>
+					<!-- /PRICE ITEM -->
+
+
+				</div>
+
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+					<!-- PRICE ITEM -->
+					<div class="panel price panel-white">
+						<div class="panel-heading arrow_box text-center">
+						<h3>FREE PLAN</h3>
+						</div>
+						<div class="panel-body text-center">
+							<p class="lead" style="font-size:40px"><strong>$0 / month</strong></p>
+						</div>
+						<ul class="list-group list-group-flush text-center">
+							<li class="list-group-item"><i class="icon-ok text-success"></i> Personal use</li>
+							<li class="list-group-item"><i class="icon-ok text-success"></i> Unlimited projects</li>
+							<li class="list-group-item"><i class="icon-ok text-success"></i> 27/7 support</li>
+						</ul>
+						<div class="panel-footer">
+							<a class="btn btn-lg btn-block btn-default" href="#">BUY NOW!</a>
+						</div>
+					</div>
+					<!-- /PRICE ITEM -->
+
+
+				</div>
+
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+
+
+
+				</div>
+
+
+			</div>
+
+</div>
+<hr/>
+</br/>
+<div class="container">
+  <div class="page-header">
+    <h1 id="timeline">Timeline</h1>
+  </div>
+  <ul class="timeline">
+    <li>
+      <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+            Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+            Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+          <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere
+            pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+            Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+            Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+            Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+          <hr>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+              <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+            Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+            Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+        </div>
+       </div>
+     </li>
+    </ul>
+   </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</html>
